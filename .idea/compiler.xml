@@ -6,12 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="DemoMaven" />
         <module name="MQDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="DemoMaven" target="1.8" />
       <module name="MQDemo" target="1.8" />
     </bytecodeTargetLevel>
   </component>

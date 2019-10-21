@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.magq.demo</groupId>
-    <artifactId>Demo.Maven</artifactId>
+    <artifactId>MQDemo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <repositories>
@@ -41,21 +41,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.apache.zookeeper</groupId>
-            <artifactId>zookeeper</artifactId>
-            <version>3.4.6</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>log4j</groupId>
-                    <artifactId>log4j</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
             <groupId>com.101tec</groupId>
             <artifactId>zkclient</artifactId>
             <version>0.6</version>
@@ -71,11 +56,6 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>dubbo</artifactId>
-            <version>2.8.4</version>
-        </dependency>
-        <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
             <version>5.1.1</version>
@@ -89,21 +69,6 @@
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
             <version>1.9.3</version>
-        </dependency>
-        <dependency>
-            <groupId>com.aliyun.openservices</groupId>
-            <artifactId>ons-client</artifactId>
-            <version>1.7.0.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.9</version>
-        </dependency>
-        <dependency>
-            <groupId>com.dangdang</groupId>
-            <artifactId>config-toolkit</artifactId>
-            <version>3.2.5-RELEASE</version>
         </dependency>
 
         <dependency>
@@ -143,11 +108,6 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.34</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>1.0.12</version>
         </dependency>
 
         <dependency>
@@ -194,12 +154,6 @@
             <groupId>jaxen</groupId>
             <artifactId>jaxen</artifactId>
             <version>1.1.6</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alipay</groupId>
-            <artifactId>alipay-sdk-JAVA</artifactId>
-            <version>DEV20180226151726</version>
         </dependency>
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -293,7 +247,7 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
                     <!-- not append assembly id in release file name -->
-                    <finalName>${name}_V${version}</finalName>
+                    <finalName>MISS.ABS.QuestionCenter_V${version}</finalName>
                     <appendAssemblyId>false</appendAssemblyId>
                     <descriptors>
                         <!-- 注意这里的路径 -->

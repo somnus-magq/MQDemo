@@ -6,8 +6,6 @@ import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.ArrayBlockingQueue;
 
-import static com.google.common.collect.Queues.newArrayBlockingQueue;
-
 /**
  * 消息处理中心
  */
@@ -15,7 +13,7 @@ public class Broker {
     private static final Logger logger = LoggerFactory.getLogger(Broker.class);
 
     // 保存消息数据的容器
-    private static ArrayBlockingQueue messageQueue = newArrayBlockingQueue(Config.MAX_SIZE);
+    private static ArrayBlockingQueue messageQueue = new ArrayBlockingQueue(Config.MAX_SIZE);
 
     // 生产消息
     public static void produce(String msg) {
